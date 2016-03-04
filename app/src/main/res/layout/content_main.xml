@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/playPauseButton"
+        android:clickable="true"
+        android:background="@android:color/holo_blue_dark"
+        android:id="@+id/mousePad"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Connect To Server"
+        android:id="@+id/playPauseButton"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Large Text"
+        android:id="@+id/sensorData"
+        android:layout_marginTop="87dp"
+        android:layout_alignTop="@+id/mousePad"
+        android:layout_alignLeft="@+id/playPauseButton"
+        android:layout_alignStart="@+id/playPauseButton" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="x"
+        android:id="@+id/x"
+        android:layout_below="@+id/sensorData"
+        android:layout_alignRight="@+id/sensorData"
+        android:layout_alignEnd="@+id/sensorData"
+        android:layout_marginTop="60dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="y"
+        android:id="@+id/y"
+        android:layout_above="@+id/z"
+        android:layout_alignLeft="@+id/sensorData"
+        android:layout_alignStart="@+id/sensorData" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="z"
+        android:id="@+id/z"
+        android:layout_centerVertical="true"
+        android:layout_alignRight="@+id/playPauseButton"
+        android:layout_alignEnd="@+id/playPauseButton" />
+
+    <SeekBar
+        android:layout_width="400dp"
+        android:layout_height="25dp"
+        android:id="@+id/seekBar"
+        android:layout_above="@+id/playPauseButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="63dp" />
+
+
+</RelativeLayout>
